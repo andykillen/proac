@@ -45,6 +45,8 @@ for(var i = 0; i < pictureSelectorArray.length; i++){
     pictureSelectorArray[i]= pictureSelectorArray[i].replace("../", "https://www.proac-loudspeakers.com/");
 }
  
+var mainimg = document.querySelector("#SpeakerCloseUpInner > img").src;
+mainimg = mainimg.replace("../", "https://www.proac-loudspeakers.com/");
 
 let description = document.getElementById('SpeakerDescription');
 let output = {};
@@ -55,7 +57,8 @@ var t = setTimeout(function(){
         subtitle : description.getElementsByTagName('p')[0].innerText,
         content : content.innerHTML,
         specification : specification,
-        pictures: pictureSelectorArray,
+        gallery: pictureSelectorArray,
+        featured: mainimg,
         range : range
     };
     
