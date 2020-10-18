@@ -31,6 +31,6 @@ class Range{
             'show_in_rest' => true,
             'show_tagcloud' => false
         );
-        register_taxonomy('range',['products'],$args);
+        register_taxonomy('range',['product'],$args);
     }
 }

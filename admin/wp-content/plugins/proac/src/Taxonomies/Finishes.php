@@ -31,6 +31,6 @@ class Finishes{
             'show_in_rest' => true,
             'show_tagcloud' => false
         );
-        register_taxonomy('finishes',['products'],$args);
+        register_taxonomy('finishes',['product'],$args);
     }
 }
